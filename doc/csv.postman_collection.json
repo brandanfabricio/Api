@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "6f8fc8e2-b01e-47cf-9f49-3244d10ebdf0",
+		"name": "csv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15551227"
+	},
+	"item": [
+		{
+			"name": "EmportarEncsv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/exportar/95140fd2-7752-496a-a6f4-ecbace5bc8bb",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"exportar",
+						"95140fd2-7752-496a-a6f4-ecbace5bc8bb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

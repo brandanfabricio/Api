@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "9bc0e89a-4464-4413-939c-a822d9d723c4",
+		"name": "productos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15551227"
+	},
+	"item": [
+		{
+			"name": "Allproduct",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "javascript"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/catalogo/producto",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"catalogo",
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarPorId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/catalogo/producto/6ebf4ebd-2bc8-4ac9-91f0-d8c86e5f0de9",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"catalogo",
+						"producto",
+						"6ebf4ebd-2bc8-4ac9-91f0-d8c86e5f0de9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarPornombre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/catalogo/producto/buscar/cerveza",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"catalogo",
+						"producto",
+						"buscar",
+						"cerveza"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"sku\" : \"PEP\",\r\n\"nombre_producto\":\"pepsi\",\r\n\"descripcion\": \"bibida sin alchol\",\r\n\"precio\":140,\r\n\"categoria\":\"asdasd123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/catalogo/producto/add",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"catalogo",
+						"producto",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"sku\" : \"PEP\",\r\n\"nombre_producto\":\"pepsi\",\r\n\"descripcion\": \"bibida sin alchol\",\r\n\"precio\":140,\r\n\"categoria\":\"asdasd123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/catalogo/producto/update/981cf4da-80de-41bc-8c7c-2e25f266c4bb",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"catalogo",
+						"producto",
+						"update",
+						"981cf4da-80de-41bc-8c7c-2e25f266c4bb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

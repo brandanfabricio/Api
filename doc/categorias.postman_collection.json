@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "ec4a6a41-3325-45b8-b9ee-efdffab7fbc1",
+		"name": "categorias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15551227"
+	},
+	"item": [
+		{
+			"name": "AllCategory",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{api}}/catalogo/categoria",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"catalogo",
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddCetegory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre_corto\": \"as121\",\r\n    \"nombre_categoria\": \"aa1234\",\r\n    \"descripcion\": \" \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/catalogo/categoria/add",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"catalogo",
+						"categoria",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCategory",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nombre_corto\": \"PRUEBA\",\r\n    \"nombre_categoria\": \"Cerveza\",\r\n    \"descripcion\": \"bebida alcholica Cerveza\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/catalogo/categoria/update/0211d415-4925-4f6d-b65f-16f7b08d655f",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"catalogo",
+						"categoria",
+						"update",
+						"0211d415-4925-4f6d-b65f-16f7b08d655f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCategory",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/catalogo/categoria/delete/0211d415-4925-4f6d-b65f-16f7b08d655f",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"catalogo",
+						"categoria",
+						"delete",
+						"0211d415-4925-4f6d-b65f-16f7b08d655f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarPorNombre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/catalogo/categoria/Cerveza",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"catalogo",
+						"categoria",
+						"Cerveza"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
